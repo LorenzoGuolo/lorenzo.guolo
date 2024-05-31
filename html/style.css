@@ -1,0 +1,218 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile generale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenitore principale */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: opacity 1s ease-in;
+}
+
+/* Stile header */
+header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+header .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+header .profile-pic:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    color: #333333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777777;
+    font-size: 1.2em;
+}
+
+/* Stile navigazione */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #007acc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center; /* Centra le opzioni del menu */
+}
+
+nav ul li {
+    display: block; /* Mostra le opzioni del menu su una riga */
+    margin-bottom: 10px; /* Aggiunge spazio tra le opzioni del menu */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 20px 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005999;
+}
+
+/* Stile sezione informazioni contatto */
+.contact-info h2 {
+    color: #333333;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #555555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Stile footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #007acc;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* Effetto di hover per link */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stile descrizione personale */
+.personal-description h2 {
+    color: #333333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.personal-description p {
+    color: #555555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Stile per la foto della nazionale */
+.national-team-photo {
+    width: 300px; /* Ridotta la larghezza */
+    height: 200px; /* Ridotta l'altezza */
+    object-fit: cover;
+    margin-top: 20px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.national-team-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Stile per il testo sotto l'immagine */
+.event-location {
+    color: #777777;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Effetto fade-in */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
